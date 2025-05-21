@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Join Tune Harbour</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <div class="container">
+    <img src="images/logo.png" alt="Tune Harbour Logo" class="logo" />
+
+    <h2 class="title">Join Tune Harbour</h2>
+
+    <form class="landing-form" action="https://formsubmit.co/teamtuneharbour@gmail.com" method="POST" enctype="multipart/form-data" >
+      
+      <!-- Anti-spam Honeypot Field (hidden) -->
+      <input type="text" name="_honey" style="display:none" />
+
+      <!-- Redirect after submit -->
+      <input type="hidden" name="_next" value="http://127.0.0.1:5500/thankyou.html" />
+
+      <!-- Disable Captcha -->
+      <input type="hidden" name="_captcha" value="false" />
+
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" name="Full Name" placeholder="Your full name" required />
+
+      <label for="address">Address</label>
+      <input type="text" id="address" name="Address" placeholder="Your address" required />
+
+      <label for="phone">Phone Number</label>
+      <input type="text" id="phone" name="Phone Number" placeholder="Your phone number" required />
+
+      <label>Music Professional - What instrument(s) do you play?</label>
+      <div class="checkbox-group scrollable" role="group" aria-label="Instruments">
+        <label><input type="checkbox" name="Instruments" value="Piano/Keyboard" /> Piano/Keyboard</label>
+        <label><input type="checkbox" name="Instruments" value="Guitar" /> Guitar</label>
+        <label><input type="checkbox" name="Instruments" value="Drums" /> Drums</label>
+        <label><input type="checkbox" name="Instruments" value="Bass" /> Bass</label>
+        <label><input type="checkbox" name="Instruments" value="Saxophone" /> Saxophone</label>
+        <label><input type="checkbox" name="Instruments" value="Violin" /> Violin</label>
+        <label><input type="checkbox" name="Instruments" value="Trumpet" /> Trumpet</label>
+        <label><input type="checkbox" name="Instruments" value="Other" /> Other</label>
+      </div>
+
+      <label for="demo">Upload Demo (Optional)</label>
+      <input type="file" id="demo" name="Demo File" accept="audio/*,video/*" />
+
+      <label for="additional-info">Additional Info</label>
+      <textarea id="additional-info" name="Additional Info" rows="4" placeholder="Any other information"></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+
+  </div>
+
+  <footer>
+    <p>© 2025 Tune Harbour. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
